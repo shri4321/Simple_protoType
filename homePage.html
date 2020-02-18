@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my addvance css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start of navbar -->
+   <nav>
+        <ul class="navtop" id="mydropdown">
+            <li><a href="#">home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">about</a></li>
+            <li class="topnav-right"><a href="#">sign in</a></li>
+            <li class="topnav-right"><a href="#">sign out</a></li>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="mydrop()">&#9776;</a></li>
+        </ul>
+    </nav> 
+    <!-- end of navbar -->
+ 
+    <div class="container" id="selector-1">
+        <div class="row"> 
+            <div class="col-6">
+                <div class="left-side">
+                    <h1 class="larger">Advance CSS Learn</h1>
+                    <h1 class="larger">Web Development</h1>
+                </div>
+                <form>
+                    <div class="left-side">
+                        <h2>Username</h2>
+                        <input class="input-b" type="text" name="username" placeholder="Usrename">
+                        <h2>Password</h2>
+                        <input class="input-b" type="text" name="Password" placeholder="Password">
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="learnMore">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+
+            <div class="col-6">
+                    <div class="right-side">
+                        <div class="vcontainer">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WbwIoQYP6no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                     </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+<div class="bgcol">
+        <header class="h-section">The Web is Awsome</header>
+    <div class="conatiner"> 
+        <div class="row">
+            <div class="col-4">
+                <div class="box bg">
+                    <div class="icon"> 
+                        <img  class="icon1" src="m.ico">
+                    </div>
+                    <label>Inform Me</label>
+                    <p>. It isn’t necessary to compile JavaScript programs because JavaScript code os directly by the browser... </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box bg">
+                    <div class="icon"> 
+                        <img  class="icon1" src="m.ico">
+                    </div>
+                    <label>Share</label>
+                    <p>You already know that a web browser knows how to take your HTML and display it. The way to talk to the browser... </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box bg">
+                    <div class="icon"> 
+                        <img  class="icon1" src="m.ico">
+                    </div>
+                    <label>Sender</label>
+                    <p>You organize and categorize real world data into types without even thinking about it: names, numbers, sounds... </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <article>
+                <p>
+                        Yes. It’s possible to get interactivity in web pages without JavaScript, but in many cases it’s inefficient and clunky. For example, data validation on forms can be handled on the web server when you submit the form. However, this means you have to submit the entire form and then wait for the server to do the validating and return the results as a new page. You might as well validate the form with paper and pencil! JavaScript interactivity occurs entirely within the browser without loading a new page.
+                </p>
+            </article>
+        </div>
+        <div class="col-5">
+            <div class="imgicon">
+            <img src="d.jpg" alt="hfyhu">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="foter">
+    <div class="row">
+        <div class="col-3 mobstk">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Careere</li>
+            </ul>
+        </div>
+        <div class="col-3 mobstk">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careere</li>
+                </ul>
+        </div>
+        <div class="col-3 mobstk">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careere</li>
+                    </ul>
+        </div>
+        <div class="col-3 mobstk">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careere</li>
+                </ul>
+            </div>
+    </div>
+</footer>
+
+
+
+     
+
+<!-- javascript for click to menu -->
+     <script>
+    function mydrop(){
+        var a = document.getElementById("mydropdown");
+        if (a.className==="navtop"){
+            a.className += " responsive";
+        }
+            else {
+                a.className = "navtop";
+            }
+    }
+    </script> 
+    <!-- end of the script -->
+</body>
+</html>
